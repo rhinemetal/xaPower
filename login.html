@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>登录</title>
+<script src="plugins/jQuery/1.12.3/jquery.min.js"></script>
+<script src="plugins/QRCode.js"></script>
+<link rel="stylesheet" href="css/login.css">
+<script>eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('5 9=2/3,f=0.e,7=0.8,1=7*9;$("b").c("d-6",1+"4");$(0).g(h(){5 a=2/3*0.8;$("b").c("d-6",a+"4")});',18,18,'window|rem|100|1920|px|var|size|wW|innerWidth|whdef||html|css|font|innerHeight|wH|resize|function'.split('|'),0,{}))</script>
+<script>
+$(function () {
+    var qrcode_ios = new QRCode(document.getElementById("q_ios"), { width : 110, height : 110 });
+    var qrcode_android = new QRCode(document.getElementById("q_android"), { width : 110, height : 110 });
+    $.ajax({
+        type: "GET",
+        url: "temp/2code.js",
+        dataType: "json",
+        success: function(data) {
+          qrcode_ios.makeCode(data.data.ipIos);
+          qrcode_android.makeCode(data.data.ipAndroid);
+        }         
+    });    
+})
+</script>
+</head>
+
+<body>
+<div class="box">
+  <ul>
+    <li><input type="text" class="username" placeholder="用户名/手机号/邮箱" /></li>
+    <li><input type="password" class="password" placeholder="密码" /></li>
+    <li class="txt">
+      <label><input type="checkbox" />记住密码</label>
+      <a href="#">忘记密码?</a>
+    </li>
+    <li><a href="#" class="loginBn">登录</a></li>
+  </ul>
+  <div class="rcode">
+      <p id="q_ios"><span>IOS下载</span></p>
+      <p id="q_android"><span>Android下载</span></p>
+  </div>
+</div>
+
+</body>
+</html>

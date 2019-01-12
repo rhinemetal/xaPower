@@ -1,0 +1,40 @@
+body,ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,th,td,img,div{padding:0;margin:0}
+body{color:#999;font:12px \5fae\8f6f\96c5\9ed1,\5b8b\4f53}
+img{border:0}
+select,input,img{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal}
+ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+html{font-size:16px;}
+html,body{height:100%;}
+body{background:url(../images/loginBg.jpg) no-repeat;background-size:100% 100%;position:relative;}
+.box{width:4.1rem;left:13rem;float:left;position:absolute;top:3.5rem}
+.box .username,.box .password{height:.58rem;line-height:.58rem;border:0;border-bottom:2px solid #e9e9e9;width:3.7rem;outline:0;font-size:.24rem;padding-left:.4rem;}
+.box .username{background:url(../images/login09.png) no-repeat 0 .13rem #fff;background-size:.3rem;}
+.box .password{background:url(../images/login10.png) no-repeat 0 .13rem #fff;margin-top:.27rem;background-size:.3rem;}
+.box .submit{margin-top:.1rem;width:2rem;background:#3A94F5;height:.64rem;line-height:.64rem;border:0;text-align:center;color:#fff;font-size:.22rem;float:left;display:inline;cursor:pointer;}
+.box .loginBn{display: block;background:#3A94F5;height: .64rem;line-height: .64rem;text-align: center;font-size: .22rem;color: #fff;text-decoration: none;}
+.box .txt{font-size:.24rem;padding:.20rem 0;height:.30rem;}
+.box .txt input{zoom:180%;margin-left:0;}
+.box .txt label{display:block;float:left;display:inline;width:2rem;}
+.box .txt a{display:block;float:right;display:inline;width:2rem;color:#4FA2E1;text-align:right;}
+.box .reg{margin-top:.1rem;color:#3A94F5;height:.62rem;line-height:.62rem;text-align:center;border:1px solid #3A94F5;float:right;display:inline;width:2rem;font-size:.22rem;text-decoration:none;}
+.link{width:11.27rem;height:9.7rem;display:block;position:absolute;top:0;left:0;}
+@media screen and (max-width:1440px) {
+  .box{top:4rem}
+  .box .txt input{zoom:100%}
+}
+@media screen and (max-width:1366px) {
+  .link{height:9.3rem}
+}
+.rcode{position: relative;}
+.rcode p{width: 135px;height:150px;border: 1px #ccc solid;border-radius:10px;position: absolute;top:70px;}
+.rcode p span{position: absolute;bottom:5px;width: 100%;text-align: center;color: #000}
+.rcode p img{position: absolute;top:10px;left:12px}
+#q_ios{left:0}
+#q_android{right:0}
+
+
+
